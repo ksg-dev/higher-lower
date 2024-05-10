@@ -18,7 +18,6 @@ def winner(first, second):
     else:
         return("b")
 
-
 def main():
     playing = True
     a = random.choice(data)
@@ -35,11 +34,7 @@ def main():
         print(vs)
         print(f"Against B: {b['name']}, a {b['description']}, from {b['country']}.")
         pick = input("Who has more followers? Type 'A' or 'B': ").lower()
-        # Testing prints
-        # print(f"top: {top}")
-        # print(f"pick: {pick}")
-        # print(f"a: {a}")
-        # print(f"b: {b}")
+        
         if top == pick:
             points += 1
             message = "You're right! Current score: " + str(points)
@@ -50,7 +45,5 @@ def main():
             clear()
             print(logo)
             print(f"You lose! Final score: {points}")
-
-
 
 main()
